@@ -1,7 +1,7 @@
 import { DownloadCounter } from "./download-counter";
 
 const downloadUrl =
-  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.4/Globe-0.1.0-beta.4.pkg";
+  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.5/Globe-0.1.0-beta.5.pkg";
 
 const repoUrl = "https://github.com/NythralHome/globe";
 
@@ -64,7 +64,7 @@ export default function Home() {
               View source
             </a>
           </div>
-          <p className="releaseNote">Beta 0.1.0-beta.4 for macOS 14 or newer.</p>
+          <p className="releaseNote">Beta 0.1.0-beta.5 for macOS 14 or newer.</p>
         </div>
 
         <div className="heroMedia" aria-label="Globe setup window preview">
