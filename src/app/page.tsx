@@ -8,7 +8,7 @@ const repoUrl = "https://github.com/NythralHome/globe";
 const setupSteps = [
   {
     title: "Install Globe",
-    text: "Download the signed beta installer, open it, then launch Globe from Applications.",
+    text: "Download the signed beta installer, open it, and Globe starts automatically from Applications.",
   },
   {
     title: "Allow Accessibility",
