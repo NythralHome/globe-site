@@ -127,10 +127,10 @@ export function FunctionalityScroll() {
                 className={`functionalityImage ${
                   index === activeIndex ? "active" : ""
                 }`}
+                fill
                 key={item.image}
                 src={item.image}
-                width={1520}
-                height={1070}
+                sizes="(max-width: 1080px) 0px, 58vw"
                 priority={index === 0}
               />
             ))}
