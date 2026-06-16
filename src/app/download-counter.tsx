@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const releaseTag = "v0.1.0-beta.8";
-const releaseAssetName = "Globe-0.1.0-beta.8.pkg";
+const releaseTag = "v0.1.0-beta.9";
+const releaseAssetName = "Globe-0.1.0-beta.9.pkg";
 
 type Release = {
   assets: Array<{
