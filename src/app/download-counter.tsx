@@ -15,7 +15,7 @@ export function DownloadCounter() {
   useEffect(() => {
     let isMounted = true;
 
-    fetch("https://api.github.com/repos/NythralHome/globe/releases/tags/v0.1.0-beta.5", {
+    fetch("https://api.github.com/repos/NythralHome/globe/releases/tags/v0.1.0-beta.6", {
       headers: {
         Accept: "application/vnd.github+json",
       },
