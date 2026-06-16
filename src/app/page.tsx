@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
 
 const downloadUrl =
-  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.7/Globe-0.1.0-beta.7.pkg";
+  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.8/Globe-0.1.0-beta.8.pkg";
 
 const repoUrl = "https://github.com/NythralHome/globe";
 const issueUrl = "https://github.com/NythralHome/globe/issues/new/choose";
@@ -116,7 +116,7 @@ export default function Home() {
               Report issue
             </a>
           </div>
-          <p className="releaseNote">Beta 0.1.0-beta.7 for macOS 14 or newer.</p>
+          <p className="releaseNote">Beta 0.1.0-beta.8 for macOS 14 or newer.</p>
         </div>
 
         <div className="heroMedia" aria-label="Globe settings window screenshot">
