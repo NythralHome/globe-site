@@ -136,6 +136,7 @@ export default function Home() {
             alt="Globe settings window"
             width={1520}
             height={1070}
+            loading="eager"
             priority
           />
           <div className="floatingBadge">Globe/Fn {"->"} Ukrainian</div>
