@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
+import { FunctionalityScroll } from "./functionality-scroll";
 
 const version = "0.1.0-beta.14";
 const downloadUrl = `https://github.com/NythralHome/globe/releases/download/v${version}/Globe-${version}.pkg`;
@@ -13,27 +14,6 @@ const features = [
   ["Double press", "Switch to a second language without cycling."],
   ["Triple press", "Keep a third input source one gesture away."],
   ["Hold Globe/Fn", "Open settings from anywhere on macOS."],
-];
-
-const story = [
-  {
-    label: "Setup",
-    title: "Guided first launch.",
-    text: "Globe opens with a native setup flow that explains permissions, privacy, and the one macOS keyboard setting that must stay manual.",
-    image: "/screenshots/globe-onboarding.png",
-  },
-  {
-    label: "Control",
-    title: "Everything lives in one settings window.",
-    text: "General controls, permissions, key actions, timing, updates, diagnostics, and links are organized into focused tabs.",
-    image: "/screenshots/globe-settings.png",
-  },
-  {
-    label: "Mapping",
-    title: "Direct switches, no guessing.",
-    text: "Assign installed input sources to single, double, and triple Globe/Fn presses. Long press opens settings by default.",
-    image: "/screenshots/globe-key-actions.png",
-  },
 ];
 
 const installSteps = [
@@ -152,59 +132,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="walkthrough" id="workflow">
-        <div className="sectionHeading center">
-          <p className="eyebrow">Walkthrough</p>
-          <h2>Small surface. Serious control.</h2>
-          <p>
-            Globe stays out of the way until you need it. Setup, mapping,
-            diagnostics, and updates are all native macOS UI.
-          </p>
-        </div>
-
-        <div className="walkthroughGrid">
-          <div className="walkthroughMedia">
-            <video
-              aria-label="Animated Globe setup and settings walkthrough"
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster="/screenshots/globe-settings.png"
-            >
-              <source src="/screenshots/globe-walkthrough.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="walkthroughCopy">
-            <p className="eyebrow">Preview</p>
-            <h2>From install to direct switching in minutes.</h2>
-            <p>
-              The beta installer opens Globe automatically, the welcome flow
-              points to the exact macOS settings, and the app confirms it is
-              running from the menu bar.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="storyStack">
-        {story.map((item) => (
-          <article className="storyPanel" key={item.title}>
-            <div className="storyCopy">
-              <p className="eyebrow">{item.label}</p>
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
-            </div>
-            <Image
-              src={item.image}
-              alt={`${item.title} screenshot`}
-              width={1520}
-              height={1070}
-              className="storyImage"
-            />
-          </article>
-        ))}
-      </section>
+      <FunctionalityScroll />
 
       <section className="install section" id="install">
         <div className="sectionHeading">
