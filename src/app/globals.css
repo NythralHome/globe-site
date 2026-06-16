@@ -330,7 +330,7 @@ p {
   align-items: center;
 }
 
-.walkthroughMedia img {
+.walkthroughMedia video {
   display: block;
   width: 100%;
   height: auto;

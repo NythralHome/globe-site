@@ -164,13 +164,16 @@ export default function Home() {
 
         <div className="walkthroughGrid">
           <div className="walkthroughMedia">
-            <Image
-              src="/screenshots/globe-walkthrough.gif"
-              alt="Animated Globe setup and settings walkthrough"
-              width={760}
-              height={535}
-              unoptimized
-            />
+            <video
+              aria-label="Animated Globe setup and settings walkthrough"
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/screenshots/globe-settings.png"
+            >
+              <source src="/screenshots/globe-walkthrough.mp4" type="video/mp4" />
+            </video>
           </div>
           <div className="walkthroughCopy">
             <p className="eyebrow">Preview</p>
