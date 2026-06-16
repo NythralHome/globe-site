@@ -227,6 +227,7 @@ export default function Home() {
         <span>Globe is an independent open-source utility by Nythral.</span>
         <div className="footerLinks">
           <a href={authorUrl}>Nythral</a>
+          <a href="/privacy">Privacy</a>
           <a href={issueUrl}>Report issue</a>
           <a href={repoUrl}>GitHub</a>
         </div>

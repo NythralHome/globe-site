@@ -663,6 +663,58 @@ footer a {
   font-weight: 760;
 }
 
+.policyPage {
+  min-height: 100svh;
+  padding: 34px clamp(20px, 5vw, 72px) 88px;
+  background: #f8fafc;
+}
+
+.policyHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 78px;
+}
+
+.policyDocument {
+  max-width: 860px;
+}
+
+.policyDocument h1 {
+  max-width: 780px;
+  margin-bottom: 20px;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 0.96;
+}
+
+.policyLead {
+  max-width: 760px;
+  color: #27313d;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.28;
+}
+
+.policyDocument section {
+  max-width: 760px;
+  padding-top: 34px;
+  margin-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.policyDocument section h2 {
+  margin-bottom: 10px;
+  font-size: clamp(26px, 3vw, 40px);
+}
+
+.policyDocument a {
+  color: var(--blue);
+  font-weight: 760;
+}
+
+.policyUpdated {
+  margin-top: 44px;
+  font-size: 14px;
+}
+
 @media (max-width: 1080px) {
   .heroStage {
     right: -34vw;
