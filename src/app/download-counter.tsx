@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const releaseAssetName = "Globe-0.1.0-beta.6.pkg";
+
 type Release = {
   assets: Array<{
     name: string;
@@ -26,10 +28,9 @@ export function DownloadCounter() {
           return;
         }
 
-        const total = release.assets.reduce(
-          (sum, asset) => sum + asset.download_count,
-          0
-        );
+        const total = release.assets
+          .filter((asset) => asset.name === releaseAssetName)
+          .reduce((sum, asset) => sum + asset.download_count, 0);
         setCount(total);
       })
       .catch(() => {

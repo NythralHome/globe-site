@@ -174,115 +174,16 @@ h3 {
 
 .heroMedia {
   overflow: hidden;
-  background: linear-gradient(135deg, #ffffff 0%, #eef5ff 100%);
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: var(--shadow);
 }
 
-.appMockup {
-  min-height: 440px;
-  background: var(--surface);
-}
-
-.windowBar {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  height: 44px;
-  padding: 0 16px;
-  background: #f0f3f6;
-  border-bottom: 1px solid var(--line);
-}
-
-.windowBar span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #d6dce4;
-}
-
-.mockupBody {
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  min-height: 396px;
-}
-
-.mockupSidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 26px 22px;
-  background: #f7f9fb;
-  border-right: 1px solid var(--line);
-}
-
-.mockupSidebar strong {
-  font-size: 22px;
-}
-
-.mockupSidebar small {
-  margin-bottom: 12px;
-  color: var(--muted);
-}
-
-.mockupSidebar b {
-  padding: 10px 12px;
-  color: #4f5a66;
-  background: #edf2f8;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.mockupContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 44px;
-}
-
-.mockIcon {
-  display: grid;
-  width: 72px;
-  height: 72px;
-  margin-bottom: 22px;
-  place-items: center;
-  color: white;
-  background: var(--blue);
-  border-radius: 16px;
-  font-size: 42px;
-  font-weight: 800;
-}
-
-.mockupContent h2 {
-  margin-bottom: 8px;
-  font-size: 42px;
-}
-
-.mockupContent p {
-  max-width: 430px;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
-.mockRows {
-  display: grid;
-  grid-template-columns: max-content minmax(120px, 190px);
-  gap: 10px 14px;
-  align-items: center;
-  max-width: 360px;
-  margin-top: 24px;
-}
-
-.mockRows span {
-  color: var(--muted);
-}
-
-.mockRows strong {
-  padding: 8px 12px;
-  background: var(--surface-soft);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+.heroScreenshot {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .band {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
 
 const downloadUrl =
@@ -67,40 +68,15 @@ export default function Home() {
           <p className="releaseNote">Beta 0.1.0-beta.6 for macOS 14 or newer.</p>
         </div>
 
-        <div className="heroMedia" aria-label="Globe setup window preview">
-          <div className="appMockup">
-            <div className="windowBar">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="mockupBody">
-              <aside className="mockupSidebar">
-                <strong>Globe</strong>
-                <small>Beta setup</small>
-                <b>Globe</b>
-                <b>Privacy</b>
-                <b>Permissions</b>
-                <b>Key Actions</b>
-              </aside>
-              <section className="mockupContent">
-                <div className="mockIcon">◎</div>
-                <h2>Direct switching</h2>
-                <p>
-                  Single, double, and triple Globe/Fn presses map to specific
-                  input sources.
-                </p>
-                <div className="mockRows">
-                  <span>Single press</span>
-                  <strong>Ukrainian</strong>
-                  <span>Double press</span>
-                  <strong>U.S.</strong>
-                  <span>Long press</span>
-                  <strong>Settings</strong>
-                </div>
-              </section>
-            </div>
-          </div>
+        <div className="heroMedia" aria-label="Globe settings window screenshot">
+          <Image
+            className="heroScreenshot"
+            src="/screenshots/globe-settings.png"
+            alt="Globe settings window with General, Permissions, Key Actions, and Advanced tabs"
+            width={1520}
+            height={1070}
+            priority
+          />
         </div>
       </section>
 
