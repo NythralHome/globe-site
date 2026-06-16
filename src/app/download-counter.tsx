@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const releaseTag = "v0.1.0-beta.9";
-const releaseAssetName = "Globe-0.1.0-beta.9.pkg";
+const releaseDownloadsUrl = "https://api.github.com/repos/NythralHome/globe/releases?per_page=100";
 
 type Release = {
   assets: Array<{
@@ -18,20 +17,24 @@ export function DownloadCounter() {
   useEffect(() => {
     let isMounted = true;
 
-    fetch(`https://api.github.com/repos/NythralHome/globe/releases/tags/${releaseTag}`, {
+    fetch(releaseDownloadsUrl, {
       headers: {
         Accept: "application/vnd.github+json",
       },
     })
       .then((response) => (response.ok ? response.json() : null))
-      .then((release: Release | null) => {
-        if (!isMounted || !release) {
+      .then((releases: Release[] | null) => {
+        if (!isMounted || !releases) {
           return;
         }
 
-        const total = release.assets
-          .filter((asset) => asset.name === releaseAssetName)
-          .reduce((sum, asset) => sum + asset.download_count, 0);
+        const total = releases.reduce((releaseTotal, release) => {
+          const assetTotal = release.assets
+            .filter((asset) => /^Globe-.+\.pkg$/.test(asset.name))
+            .reduce((sum, asset) => sum + asset.download_count, 0);
+
+          return releaseTotal + assetTotal;
+        }, 0);
         setCount(total);
       })
       .catch(() => {
