@@ -126,6 +126,7 @@ export default function Home() {
             alt="Globe settings window with General, Permissions, Key Actions, and Advanced tabs"
             width={1520}
             height={1070}
+            loading="eager"
             priority
           />
         </div>
