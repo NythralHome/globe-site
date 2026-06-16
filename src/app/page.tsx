@@ -1,14 +1,14 @@
 import { DownloadCounter } from "./download-counter";
 
 const downloadUrl =
-  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.4/Globe-0.1.0-beta.4.dmg";
+  "https://github.com/NythralHome/globe/releases/download/v0.1.0-beta.4/Globe-0.1.0-beta.4.pkg";
 
 const repoUrl = "https://github.com/NythralHome/globe";
 
 const setupSteps = [
   {
     title: "Install Globe",
-    text: "Download the beta DMG, drag Globe.app to Applications, then open it from Applications.",
+    text: "Download the signed beta installer, open it, then launch Globe from Applications.",
   },
   {
     title: "Allow Accessibility",
@@ -163,11 +163,11 @@ export default function Home() {
       <section className="downloadStrip">
         <div>
           <h2>Download Globe beta</h2>
-          <p>Native macOS app, DMG installer, open-source MIT license.</p>
+          <p>Native macOS app, signed installer package, open-source MIT license.</p>
           <DownloadCounter />
         </div>
         <a className="button primary" href={downloadUrl}>
-          Download DMG
+          Download PKG
         </a>
       </section>
 
