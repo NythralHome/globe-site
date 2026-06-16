@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     url: "https://globe.nythral.com",
     siteName: "Globe",
   },
+  icons: {
+    icon: "/brand/globe-icon.png",
+    apple: "/brand/globe-icon.png",
+  },
 };
 
 export default function RootLayout({

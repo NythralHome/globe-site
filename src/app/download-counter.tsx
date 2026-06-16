@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const releaseAssetName = "Globe-0.1.0-beta.6.pkg";
+const releaseTag = "v0.1.0-beta.7";
+const releaseAssetName = "Globe-0.1.0-beta.7.pkg";
 
 type Release = {
   assets: Array<{
@@ -17,7 +18,7 @@ export function DownloadCounter() {
   useEffect(() => {
     let isMounted = true;
 
-    fetch("https://api.github.com/repos/NythralHome/globe/releases/tags/v0.1.0-beta.6", {
+    fetch(`https://api.github.com/repos/NythralHome/globe/releases/tags/${releaseTag}`, {
       headers: {
         Accept: "application/vnd.github+json",
       },
