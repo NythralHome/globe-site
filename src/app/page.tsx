@@ -10,23 +10,27 @@ const issueUrl = "https://github.com/NythralHome/globe/issues/new/choose";
 const authorUrl = "https://nythral.com";
 
 const features = [
-  ["One press", "Jump straight to your primary input source."],
-  ["Double press", "Switch to a second language without cycling."],
-  ["Triple press", "Keep a third input source one gesture away."],
-  ["Hold Globe/Fn", "Open settings from anywhere on macOS."],
+  ["Globe/Fn Pro", "Use the hardware Globe key for direct switching."],
+  ["App Store safe", "Use configurable global shortcuts without permissions."],
+  ["Per-language keys", "Assign shortcuts like Control-1 to specific languages."],
+  ["Multi-press", "Single, double, and triple presses stay predictable."],
 ];
 
 const installSteps = [
-  "Install the signed PKG.",
-  "Enable Accessibility for Globe.",
+  "Install Globe Pro.",
+  "Enable Input Monitoring.",
   "Set Globe key to Do Nothing.",
   "Map your input sources.",
 ];
 
 const faq = [
   [
-    "Why Accessibility?",
-    "macOS requires Accessibility permission for global Globe/Fn key events. Globe does not record typed text.",
+    "Why does Pro need Input Monitoring?",
+    "macOS requires permission for direct global Globe/Fn detection. Globe Pro does not record typed text.",
+  ],
+  [
+    "What is the App Store edition?",
+    "The Mac App Store build avoids Input Monitoring and uses configurable global shortcuts like Control-Option-Z or Control-1.",
   ],
   [
     "Why set Globe to Do Nothing?",
@@ -43,10 +47,10 @@ const faq = [
 ];
 
 const changelog = [
-  "Centered menu-bar windows from the active screen context.",
-  "Direct update installer downloads from GitHub Releases.",
-  "Exportable diagnostics and Globe/Fn key test flow.",
-  "Signed, notarized, stapled Developer ID installer.",
+  "Globe Pro keeps direct global Globe/Fn switching.",
+  "App Store edition uses configurable Carbon global shortcuts.",
+  "Direct language shortcuts can be mapped per input source.",
+  "Signed, notarized, stapled Developer ID installer for Pro.",
 ];
 
 export default function Home() {
@@ -84,14 +88,15 @@ export default function Home() {
             height={92}
             priority
           />
-          <h1>Globe</h1>
+          <h1>Globe Pro</h1>
           <p className="lede">
-            Direct input source switching for macOS. Press Globe/Fn once,
-            twice, or three times to jump to the language you meant.
+            Direct input source switching for macOS. Globe Pro uses the
+            hardware Globe/Fn key; the App Store edition uses configurable
+            global shortcuts.
           </p>
           <div className="actions">
             <a className="button primary" href={downloadUrl}>
-              Download beta
+              Download Pro beta
             </a>
             <a className="button secondary" href={repoUrl}>
               View source
@@ -100,7 +105,7 @@ export default function Home() {
               Report issue
             </a>
           </div>
-          <p className="releaseNote">Beta {version} for macOS 14 or newer.</p>
+          <p className="releaseNote">Globe Pro beta {version} for macOS 14 or newer.</p>
         </div>
 
         <div className="heroStage" aria-label="Globe app screenshots">
@@ -119,7 +124,7 @@ export default function Home() {
             loading="eager"
             priority
           />
-          <div className="floatingBadge">Globe/Fn {"->"} Ukrainian</div>
+          <div className="floatingBadge">Globe Pro: Fn {"->"} Ukrainian</div>
         </div>
       </section>
 
@@ -137,10 +142,10 @@ export default function Home() {
       <section className="install section" id="install">
         <div className="sectionHeading">
           <p className="eyebrow">Install</p>
-          <h2>Signed beta. Clear macOS steps.</h2>
+          <h2>Signed Pro beta. Clear macOS steps.</h2>
           <p>
-            Globe cannot silently change Apple-controlled permissions. The app
-            guides you to the right places and gives you a built-in key test.
+            Globe Pro cannot silently change Apple-controlled permissions. The
+            app guides you to the right places and gives you a built-in key test.
           </p>
         </div>
         <div className="installGrid">
@@ -159,9 +164,10 @@ export default function Home() {
           <h2>No typed text is recorded.</h2>
         </div>
         <p>
-          Globe only observes Globe/Fn key state changes and input source
-          metadata needed for switching. Diagnostics stay local until you
-          choose to export and attach them to an issue.
+          Globe Pro only observes Globe/Fn key state changes and input source
+          metadata needed for switching. The App Store edition uses registered
+          shortcuts instead of Input Monitoring. Diagnostics stay local until
+          you choose to export and attach them to an issue.
         </p>
       </section>
 
@@ -177,7 +183,7 @@ export default function Home() {
         <div className="repoCard">
           <div>
             <h3>NythralHome/globe</h3>
-            <p>Native Swift app, signed installer, beta release notes, and CI.</p>
+            <p>Native Swift app, App Store shortcut flavor, Pro installer, release notes, and CI.</p>
           </div>
           <a className="button secondary" href={repoUrl}>
             Open GitHub
@@ -202,7 +208,7 @@ export default function Home() {
 
       <section className="release section">
         <div>
-          <p className="eyebrow">Latest beta</p>
+          <p className="eyebrow">Latest Pro beta</p>
           <h2>{version}</h2>
           <DownloadCounter />
         </div>
@@ -215,16 +221,16 @@ export default function Home() {
 
       <section className="downloadStrip">
         <div>
-          <h2>Download Globe beta</h2>
-          <p>Native macOS app, signed installer package, MIT licensed.</p>
+          <h2>Download Globe Pro beta</h2>
+          <p>Native macOS app, signed Developer ID installer, MIT licensed.</p>
         </div>
         <a className="button primary" href={downloadUrl}>
-          Download PKG
+          Download Pro PKG
         </a>
       </section>
 
       <footer>
-        <span>Globe is an independent open-source utility by Nythral.</span>
+        <span>Globe Pro is an independent open-source utility by Nythral.</span>
         <div className="footerLinks">
           <a href={authorUrl}>Nythral</a>
           <a href="/privacy">Privacy</a>

@@ -49,12 +49,12 @@ export function DownloadCounter() {
   }, []);
 
   if (count === null) {
-    return <p className="downloadCount">Beta download count loads from GitHub.</p>;
+    return <p className="downloadCount">Pro download count loads from GitHub.</p>;
   }
 
   return (
     <p className="downloadCount">
-      {count.toLocaleString()} beta {count === 1 ? "download" : "downloads"} on
+      {count.toLocaleString()} Pro {count === 1 ? "download" : "downloads"} on
       GitHub Releases.
     </p>
   );

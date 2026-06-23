@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://globe.nythral.com"),
-  title: "Globe — macOS Globe/Fn Input Source Switcher",
+  title: "Globe Pro — macOS Input Source Switcher",
   description:
-    "Open-source macOS utility for predictable Globe/Fn key input source switching.",
+    "Open-source macOS utility for predictable input source switching with Globe/Fn Pro support and App Store-safe shortcuts.",
   openGraph: {
-    title: "Globe",
+    title: "Globe Pro",
     description:
-      "A predictable macOS Globe/Fn key input source switcher. Open source under the MIT License.",
+      "A predictable macOS input source switcher with Globe/Fn Pro support and configurable shortcuts. Open source under the MIT License.",
     url: "https://globe.nythral.com",
     siteName: "Globe",
   },

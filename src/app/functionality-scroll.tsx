@@ -7,21 +7,21 @@ const functionalityItems = [
   {
     label: "First launch",
     title: "Know exactly what just opened.",
-    text: "The welcome flow explains the menu bar app, privacy boundary, Accessibility permission, and the one keyboard setting macOS keeps manual.",
+    text: "The welcome flow explains the menu bar app, privacy boundary, Pro permissions, and the App Store shortcut path.",
     image: "/screenshots/globe-onboarding.png",
     bullets: ["Welcome setup", "Menu bar status", "Manual macOS step"],
   },
   {
-    label: "Permissions",
+    label: "Pro permissions",
     title: "Test the Globe key before mapping anything.",
-    text: "The permissions screen shows Accessibility state, opens the right System Settings pane, and confirms whether Globe/Fn events are visible.",
+    text: "Globe Pro shows permission state, opens the right System Settings pane, and confirms whether Globe/Fn events are visible.",
     image: "/screenshots/globe-permissions.png",
     bullets: ["Accessibility helper", "Globe/Fn test", "Keyboard setting guide"],
   },
   {
     label: "Key Actions",
     title: "Jump to the language you meant.",
-    text: "Assign installed input sources to single, double, and triple Globe/Fn presses. Keep long press for settings when you need to adjust the app.",
+    text: "Assign installed input sources to single, double, and triple actions. The App Store edition can also bind direct shortcuts to individual languages.",
     image: "/screenshots/globe-key-actions.png",
     bullets: ["Single press", "Double press", "Triple press"],
   },
@@ -76,10 +76,10 @@ export function FunctionalityScroll() {
     <section className="functionalityScroll" id="workflow">
       <div className="functionalityIntro">
         <p className="eyebrow">Functionality</p>
-        <h2>Make the Globe key predictable.</h2>
+        <h2>Make language switching predictable.</h2>
         <p>
-          Globe turns one overloaded macOS key into direct, intentional actions
-          without hiding what the app needs from the system.
+          Globe turns language switching into direct, intentional actions
+          without hiding what each distribution needs from the system.
         </p>
       </div>
 
