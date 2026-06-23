@@ -11,8 +11,8 @@ const authorUrl = "https://nythral.com";
 
 const features = [
   ["Globe/Fn Pro", "Use the hardware Globe key for direct switching."],
-  ["App Store safe", "Use configurable global shortcuts without permissions."],
   ["Per-language keys", "Assign shortcuts like Control-1 to specific languages."],
+  ["Fix wrong layout", "Select mistyped text and press the target language shortcut."],
   ["Multi-press", "Single, double, and triple presses stay predictable."],
 ];
 
@@ -48,8 +48,9 @@ const faq = [
 
 const changelog = [
   "Globe Pro keeps direct global Globe/Fn switching.",
-  "App Store edition uses configurable Carbon global shortcuts.",
-  "Direct language shortcuts can be mapped per input source.",
+  "Direct language shortcuts can be mapped per input source in Pro and App Store builds.",
+  "Globe Pro can fix selected wrong-layout text when a direct language shortcut is pressed.",
+  "Clipboard contents are restored after text fixing when no other app changes them.",
   "Signed, notarized, stapled Developer ID installer for Pro.",
 ];
 
@@ -91,8 +92,8 @@ export default function Home() {
           <h1>Globe Pro</h1>
           <p className="lede">
             Direct input source switching for macOS. Globe Pro uses the
-            hardware Globe/Fn key; the App Store edition uses configurable
-            global shortcuts.
+            hardware Globe/Fn key, supports per-language shortcuts, and can fix
+            selected text typed in the wrong keyboard layout.
           </p>
           <div className="actions">
             <a className="button primary" href={downloadUrl}>
@@ -165,9 +166,10 @@ export default function Home() {
         </div>
         <p>
           Globe Pro only observes Globe/Fn key state changes and input source
-          metadata needed for switching. The App Store edition uses registered
-          shortcuts instead of Input Monitoring. Diagnostics stay local until
-          you choose to export and attach them to an issue.
+          metadata needed for switching. Wrong-layout fixing uses the macOS
+          clipboard briefly, restores the previous contents when safe, and does
+          not store typed text. Diagnostics stay local until you choose to export
+          and attach them to an issue.
         </p>
       </section>
 
