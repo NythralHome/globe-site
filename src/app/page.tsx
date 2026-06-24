@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
 import { FunctionalityScroll } from "./functionality-scroll";
 
-const version = "0.1.0-beta.19";
+const version = "0.1.0-beta.20";
 const downloadUrl = `https://github.com/NythralHome/globe/releases/download/v${version}/Globe-${version}.pkg`;
 
 const repoUrl = "https://github.com/NythralHome/globe";
