@@ -16,7 +16,7 @@ const functionalityItems = [
     title: "Test the Globe key before mapping anything.",
     text: "Globe Pro shows permission state, opens the right System Settings pane, and confirms whether Globe/Fn events are visible.",
     image: "/screenshots/globe-permissions.png",
-    bullets: ["Accessibility helper", "Globe/Fn test", "Keyboard setting guide"],
+    bullets: ["Input Monitoring helper", "Globe/Fn test", "Keyboard setting guide"],
   },
   {
     label: "Key Actions",
