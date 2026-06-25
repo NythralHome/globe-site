@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
 import { FunctionalityScroll } from "./functionality-scroll";
 
-const version = "0.1.0-beta.26";
+const version = "0.1.0-beta.27";
 const downloadUrl = `https://github.com/NythralHome/globe/releases/download/v${version}/Globe-${version}.pkg`;
 
 const repoUrl = "https://github.com/NythralHome/globe";
@@ -72,7 +72,7 @@ export default function Home() {
         <nav>
           <a href="#workflow">Workflow</a>
           <a href="#install">Install</a>
-          <a href="#open-source">Open source</a>
+          <a href="#source-available">Source</a>
           <a href="#faq">FAQ</a>
           <a href={repoUrl}>GitHub</a>
         </nav>
@@ -80,7 +80,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="heroCopy">
-          <p className="eyebrow">Open-source macOS utility</p>
+          <p className="eyebrow">Source-available macOS utility</p>
           <Image
             className="heroIcon"
             src="/brand/globe-icon.png"
@@ -173,13 +173,13 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="openSource section" id="open-source">
+      <section className="openSource section" id="source-available">
         <div className="sectionHeading">
           <p className="eyebrow">Open source</p>
           <h2>Built in public by Nythral.</h2>
           <p>
             The app code, packaging scripts, GitHub workflows, issue templates,
-            and beta docs are available under the MIT License.
+            and beta docs are available under the PolyForm Noncommercial License 1.0.0.
           </p>
         </div>
         <div className="repoCard">
@@ -224,7 +224,7 @@ export default function Home() {
       <section className="downloadStrip">
         <div>
           <h2>Download Globe Pro beta</h2>
-          <p>Native macOS app, signed Developer ID installer, MIT licensed.</p>
+          <p>Native macOS app, signed Developer ID installer, noncommercial source license.</p>
         </div>
         <a className="button primary" href={downloadUrl}>
           Download Pro PKG
@@ -232,7 +232,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>Globe Pro is an independent open-source utility by Nythral.</span>
+        <span>Globe Pro is an independent source-available utility by Nythral.</span>
         <div className="footerLinks">
           <a href={authorUrl}>Nythral</a>
           <a href="/privacy">Privacy</a>

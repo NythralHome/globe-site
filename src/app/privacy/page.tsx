@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — Globe",
   description:
-    "Privacy policy for Globe Pro, an open-source macOS input source switcher by Nythral.",
+    "Privacy policy for Globe Pro, a source-available macOS input source switcher by Nythral.",
 };
 
 export default function PrivacyPage() {
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
         <p className="eyebrow">Privacy Policy</p>
         <h1>Globe does not record typed text.</h1>
         <p className="policyLead">
-          Globe is an open-source macOS utility by Nythral for predictable input
+          Globe is a source-available macOS utility by Nythral for predictable input
           source switching. This policy explains what the app observes, stores,
           and never collects.
         </p>
