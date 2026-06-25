@@ -1,6 +1,6 @@
 # Globe Site
 
-Product site for [Globe](https://github.com/NythralHome/globe), a source-available macOS input source switcher with Globe Pro and App Store shortcut editions.
+Product site for [Nythral Globe](https://github.com/NythralHome/globe), an open-source macOS input source switcher with Globe Pro and App Store shortcut editions.
 
 ## Development
 

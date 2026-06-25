@@ -2,7 +2,7 @@ import Image from "next/image";
 import { DownloadCounter } from "./download-counter";
 import { FunctionalityScroll } from "./functionality-scroll";
 
-const version = "0.1.0-beta.27";
+const version = "0.1.0-beta.28";
 const downloadUrl = `https://github.com/NythralHome/globe/releases/download/v${version}/Globe-${version}.pkg`;
 
 const repoUrl = "https://github.com/NythralHome/globe";
@@ -42,7 +42,7 @@ const faq = [
   ],
   [
     "Where do bug reports go?",
-    "Use Report issue on GitHub. You can export diagnostics from the app and attach them to the issue.",
+    "Use Report issue on GitHub. Include your macOS version, Globe version, and the input sources you configured.",
   ],
 ];
 
@@ -67,12 +67,12 @@ export default function Home() {
             height={32}
             priority
           />
-          <span>Globe</span>
+          <span>Nythral Globe</span>
         </a>
         <nav>
           <a href="#workflow">Workflow</a>
           <a href="#install">Install</a>
-          <a href="#source-available">Source</a>
+          <a href="#open-source">Open source</a>
           <a href="#faq">FAQ</a>
           <a href={repoUrl}>GitHub</a>
         </nav>
@@ -80,7 +80,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="heroCopy">
-          <p className="eyebrow">Source-available macOS utility</p>
+          <p className="eyebrow">Open-source macOS utility</p>
           <Image
             className="heroIcon"
             src="/brand/globe-icon.png"
@@ -89,7 +89,7 @@ export default function Home() {
             height={92}
             priority
           />
-          <h1>Globe Pro</h1>
+          <h1>Nythral Globe Pro</h1>
           <p className="lede">
             Direct input source switching for macOS. Globe Pro uses the
             hardware Globe/Fn key, supports per-language shortcuts, and can fix
@@ -168,18 +168,18 @@ export default function Home() {
           Globe Pro only observes Globe/Fn key state changes and input source
           metadata needed for switching. Wrong-layout fixing uses the macOS
           clipboard briefly, restores the previous contents when safe, and does
-          not store typed text. Diagnostics stay local until you choose to export
-          and attach them to an issue.
+          not store typed text. Local diagnostic logs do not include typed text.
         </p>
       </section>
 
-      <section className="openSource section" id="source-available">
+      <section className="openSource section" id="open-source">
         <div className="sectionHeading">
           <p className="eyebrow">Open source</p>
           <h2>Built in public by Nythral.</h2>
           <p>
             The app code, packaging scripts, GitHub workflows, issue templates,
-            and beta docs are available under the PolyForm Noncommercial License 1.0.0.
+            and beta docs are available under the GNU GPLv3. Nythral names,
+            icons, and official distribution branding are covered separately.
           </p>
         </div>
         <div className="repoCard">
@@ -224,7 +224,7 @@ export default function Home() {
       <section className="downloadStrip">
         <div>
           <h2>Download Globe Pro beta</h2>
-          <p>Native macOS app, signed Developer ID installer, noncommercial source license.</p>
+          <p>Native macOS app, signed Developer ID installer, open-source GPLv3 code.</p>
         </div>
         <a className="button primary" href={downloadUrl}>
           Download Pro PKG
@@ -232,7 +232,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>Globe Pro is an independent source-available utility by Nythral.</span>
+        <span>Nythral Globe Pro is an independent open-source utility by Nythral.</span>
         <div className="footerLinks">
           <a href={authorUrl}>Nythral</a>
           <a href="/privacy">Privacy</a>
