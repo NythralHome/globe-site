@@ -4,6 +4,7 @@ import { FunctionalityScroll } from "./functionality-scroll";
 
 const version = "0.1.0-beta.30";
 const downloadUrl = `https://github.com/NythralHome/globe/releases/download/v${version}/Globe-${version}.pkg`;
+const appStoreUrl = "https://apps.apple.com/us/app/nythral-globe/id6781046732?mt=12";
 
 const repoUrl = "https://github.com/NythralHome/globe";
 const issueUrl = "https://github.com/NythralHome/globe/issues/new/choose";
@@ -98,6 +99,13 @@ export default function Home() {
           <div className="actions">
             <a className="button primary" href={downloadUrl}>
               Download Pro beta
+            </a>
+            <a
+              className="appStoreBadge"
+              href={appStoreUrl}
+              aria-label="Download Nythral Globe on the App Store"
+            >
+              <img src="/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
             </a>
             <a className="button secondary" href={repoUrl}>
               View source
@@ -226,9 +234,18 @@ export default function Home() {
           <h2>Download Globe Pro beta</h2>
           <p>Native macOS app, signed Developer ID installer, open-source GPLv3 code.</p>
         </div>
-        <a className="button primary" href={downloadUrl}>
-          Download Pro PKG
-        </a>
+        <div className="downloadActions">
+          <a className="button primary" href={downloadUrl}>
+            Download Pro PKG
+          </a>
+          <a
+            className="appStoreBadge appStoreBadgeDark"
+            href={appStoreUrl}
+            aria-label="Download Nythral Globe on the App Store"
+          >
+            <img src="/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+          </a>
+        </div>
       </section>
 
       <footer>

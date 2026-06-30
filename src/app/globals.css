@@ -158,6 +158,7 @@ p {
 
 .actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
@@ -192,6 +193,24 @@ p {
   color: var(--foreground);
   background: rgba(255, 255, 255, 0.34);
   border: 1px solid rgba(21, 23, 26, 0.2);
+}
+
+.appStoreBadge {
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.appStoreBadge:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.appStoreBadge img {
+  display: block;
+  width: auto;
+  height: 40px;
 }
 
 .releaseNote {
@@ -643,6 +662,18 @@ p {
 .downloadStrip h2 {
   margin-bottom: 6px;
   font-size: clamp(28px, 3vw, 42px);
+}
+
+.downloadActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.appStoreBadgeDark {
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
 footer {
